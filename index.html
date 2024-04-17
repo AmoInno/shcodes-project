@@ -17,24 +17,29 @@
     <div class="weather-app">
         <header>
             <form>
-                <input type="text" placeholder="Enter a city..." required>
-                <input type="submit" value="Search">
+                <input type="text" placeholder="Enter a city..." required class="search-input">
+                <input type="submit" value="Search" class="search-submit">
             </form>
         </header>
         <main>
-            <div>
-                <h1>
-                    Paris
-                </h1>
-                <p>
-                    Sunday 11:42, overcast clouds
-                    <br>
-                    Humidity: 81%, Wind: 2.57km/h
+            <div class="weather-app-details">
+                <div class="weather-data">
+                    <h1 class="city">
+                        Paris
+                    </h1>
+                    <p class="temperature-details">
+                        Sunday 11:42, overcast clouds
+                        <br>
+                        Humidity:<span class="weather-values">81%</span> , Wind: <span
+                            class="weather-values">2.57km/h</span>
 
-                </p>
-            </div>
-            <div>
-                ☁ 14&degC
+                    </p>
+                </div>
+                <div class="weather-app-temperature">
+                    <div class="weather-app-emoji">⛅</div>
+                    <div class="temperature-value">14</div>
+                    <div class="degrees">&degC</div>
+                </div>
             </div>
         </main>
         <footer>
